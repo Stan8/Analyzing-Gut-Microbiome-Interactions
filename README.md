@@ -3,5 +3,5 @@ Harnessing the potential of the latest information retrieval techniques relies h
 
 ## Annotating the dataset
 The aim of this project is to:
-* Revising named entities annotations imported from PubTator.
-* Annotating relations linking entities.
+* Revise named entities annotations imported from PubTator.
+* Annotate relations linking entities.
