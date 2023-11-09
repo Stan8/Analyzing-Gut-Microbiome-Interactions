@@ -5,7 +5,5 @@ Harnessing the potential of the latest information retrieval techniques relies h
 ## Annotating the dataset
 Emerging Large Language Models have shown to be efficient and accurate for multiple tasks, raising the question of their use in annotation use cases, as the labeling process can be costly, especially in domains of speciality. Our annotation process of relations is designed in two distinct phases. In the initial phase, annotators will be tasked with evaluating and confirming or refuting the anticipated relationship between two entities. These predictions will be generated externally utilizing a Language Model (LLM). Following this, in the second phase, annotators will take an active role in choosing the appropriate annotation, with the option of leveraging ChatGPT for assistance. This means that the annotator will have to choose one of the previsouly mentioned interaction types. The overarching objective of this methodology is to scrutinize and quantify the impact of each annotation process setting, as the inter-annotator agreement will be calculated for each setting, offering invaluable insights for the automation of biomedical annotations.
 To sum up, the aim of this project is to:
-* Evaluate LLM predictions of relations;
-* Annotate relations linking entities, by choosing the interaction type, using external knowledge if needed. 
-
-
+1. Evaluate LLM predictions of relations;
+2. Annotate relations linking entities, by choosing the interaction type, using external knowledge if needed. 
