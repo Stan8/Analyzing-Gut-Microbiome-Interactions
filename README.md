@@ -3,7 +3,16 @@ Harnessing the potential of the latest information retrieval techniques relies h
 
 
 ## Annotating the dataset
-Emerging Large Language Models have shown to be efficient and accurate for multiple tasks, raising the question of their use in annotation use cases, as the labeling process can be costly, especially in domains of speciality. Our annotation process of relations is designed in two distinct phases. In the initial phase, annotators will be tasked with evaluating and confirming or refuting the anticipated relationship between two entities. These predictions will be generated externally utilizing a Language Model (LLM). Following this, in the second phase, annotators will take an active role in choosing the appropriate annotation, with the option of leveraging ChatGPT for assistance. This means that the annotator will have to choose one of the previsouly mentioned interaction types. The overarching objective of this methodology is to scrutinize and quantify the impact of each annotation process setting, as the inter-annotator agreement will be calculated for each setting, offering invaluable insights for the automation of biomedical annotations.
+Emerging Large Language Models have shown to be efficient and accurate for multiple tasks, raising the question of their use in annotation use cases, as the labeling process can be costly, especially in domains of speciality. Our annotation process of relations is designed in two distinct phases. In the initial phase, annotators will be tasked with evaluating and confirming or modifying the anticipated relationship between two entities. These predictions will be generated externally utilizing a Language Model (LLM). Following this, in the second phase, annotators will take an active role in choosing the appropriate annotation, with the option of leveraging ChatGPT for assistance. This means that the annotator will have to choose one of the previsouly mentioned interaction types. The overarching objective of this methodology is to scrutinize and quantify the impact of each annotation process setting, as the inter-annotator agreement will be calculated for each setting, offering invaluable insights for the automation of biomedical annotations.
 To sum up, the aim of this project is to:
 1. Evaluate LLM predictions of relations;
-2. Annotate relations linking entities, by choosing the interaction type, using external knowledge if needed. 
+2. Annotate relations linking entities, by choosing the interaction type, using external knowledge if needed.
+
+## Tasks breakdown
+# Task 1: Annotation of the gold standard dataset
+A biology specialist has annotated a segment of the created dataset. In order to verify the accuracy of participant annotations and familiarize them with the annotation task, we incorporate a step to double-annotate this portion of the corpus. The objective is to achieve maximum accuracy, referencing the gold annotations.
+# Task 2: Evaluation of predictions
+A second part of the created corpus has been automatically pre-annotated using a fine-tuned model on our task. During this phase, participants are required to either adjust the annotation if they disagree with it or keep it unchanged.
+# Task 3: P-tuning for sequence classification
+The objective of this phase is to assess the impact of prompt tuning for an LLM (small versions to be able to run them on google colab, for instance Falcon-7B-instruct) on our task. To accomplish this, the first step involves evaluating various prompt designs made for relation extraction. Subsequently, the prompt format that gives the most accurate results will be employed to prompt-tune the model.
+
