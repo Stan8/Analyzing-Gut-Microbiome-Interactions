@@ -9,10 +9,10 @@ To sum up, the aim of this project is to:
 2. Annotate relations linking entities, by choosing the interaction type, using external knowledge if needed.
 
 ## Tasks breakdown
-# Task 1: Annotation of the gold standard dataset
+### Task 1: Annotation of the gold standard dataset
 A biology specialist has annotated a segment of the created dataset. In order to verify the accuracy of participant annotations and familiarize them with the annotation task, we incorporate a step to double-annotate this portion of the corpus. The objective is to achieve maximum accuracy, referencing the gold annotations.
-# Task 2: Evaluation of predictions
+### Task 2: Evaluation of predictions
 A second part of the created corpus has been automatically pre-annotated using a fine-tuned model on our task. During this phase, participants are required to either adjust the annotation if they disagree with it or keep it unchanged.
-# Task 3: P-tuning for sequence classification
+### Task 3: P-tuning for sequence classification
 The objective of this phase is to assess the impact of prompt tuning for an LLM (small versions to be able to run them on google colab, for instance Falcon-7B-instruct) on our task. To accomplish this, the first step involves evaluating various prompt designs made for relation extraction. Subsequently, the prompt format that gives the most accurate results will be employed to prompt-tune the model.
 
